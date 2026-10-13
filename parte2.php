@@ -1,7 +1,7 @@
 <?php
 
         
-        /*Historial de tiradas que llega por URL"
+        /*Historial de tiradas que llega por URL"*/
         $resultado = $_GET["resultado"] ?? "";
         
         /*Todo los resultados estan separados y los añade a un array*/
