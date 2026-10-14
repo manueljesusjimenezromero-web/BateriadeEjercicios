@@ -2,6 +2,7 @@
     $primFra = $_GET["primFra"] ?? "";
     $secFra  = $_GET["secFra"] ?? "";
     $terFra  = $_GET["terFra"] ?? "";
+    
     $primFra2 = $_GET["primFra2"] ?? "";
     $secFra2  = $_GET["secFra2"] ?? "";
     $terFra2  = $_GET["terFra2"] ?? "";
@@ -64,9 +65,13 @@
          <button type="submit" form="miForm" name="alea" value="1">Aleatoria</button>
         <?php 
             if ($alea!=""){
+
+
                 $a=$primFra3[array_rand($primFra3)];
                 $b=$secFra3[array_rand($secFra3)];
                 $c=$terFra3[array_rand($terFra3)];
+
+
                 echo "<p>" . htmlspecialchars("$a $b $c."). "</p>";
             } elseif ($primFra2 ==null && $secFra2 ==null && $terFra2 ==null) {
                 echo "<p>" . htmlspecialchars("$primFra $secFra $terFra."). "</p>";

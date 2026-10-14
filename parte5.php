@@ -37,14 +37,15 @@
             }elseif($sel == "xor"){
                 $a=($pritext != $sectext) ? "true" : "false";
             }
-            if (is_numeric($pritext) && is_numeric($sectext)){
-                if($sel == "+"){
-                    $a=$pritext + $sectext;
-                }else{
-                    $a=$pritext - $sectext;
+            if ($sel == "+" or $sel == "-") {
+                if (is_numeric($pritext) && is_numeric($sectext)){
+                    if($sel == "+"){
+                        $a=$pritext + $sectext;
+                    }else{
+                        $a=$pritext - $sectext;
+                    }
                 }
             }
-            
             echo "<p>Solucion:".$a."</p>";
         ?>
     </body>
